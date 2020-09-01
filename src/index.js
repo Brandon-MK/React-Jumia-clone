@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Popper from "popper.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import App from "./App";
 import BasicExample from "./components/route";
 import { BrowserRouter } from "react-router-dom";
@@ -11,6 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <BasicExample />
   </BrowserRouter>,
+
   document.getElementById("root")
 );
 
